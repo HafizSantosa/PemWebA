@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* navbar */
+
+
+
+nav {
+    display: flex;
+    background-color: black; 
+    color:whitesmoke;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+nav .logo{
+    font-family: 'Climate Crisis', cursive;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav ul li a:hover{
+    color: gray
+}
+
+/* Menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -6px;
+    top: -3px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+/* Home */
+.main{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+    align-items: center;
+    text-align: center;
+    
+}
+
+.nama{
+    font-family: 'Climate Crisis', cursive;
+    letter-spacing: 2px;
+
+}
+
+.foto{
+    height: 200px;
+    margin: 25px;
+    border: whitesmoke;
+    border-style: solid ;
+    border-width: 3px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    ; 
+    
+}
+
+.btn{
+    margin: 25px;
+    padding: 10px 35px;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    color: rgb(12, 12, 12);
+}
+
+/* About */
+#About{
+    background-color: black;
+    padding: 25px;
+    
+}
+
+.headingabout{
+    font-family: 'Climate Crisis', cursive;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+
+.paragrafabout{
+    margin: 20px
+}
+
+.tentang{
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: center;
+    
+}
+
+.achievements{
+    margin-right: 15%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    justify-content: center;
+    
+}
+
+/* Fields */
+#Fields{
+    background-color: rgb(12, 12, 12);
+    padding: 25px;
+    color: whitesmoke;
+}
+
+.headingfields{
+    font-family: 'Climate Crisis', cursive;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+
+.paragraffields{
+    margin: 20px
+}
+
+.prefields{
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.iconset{
+    height: 50%;
+    width: 50%;
+    margin: 20px;
+}
+
+
+
+.rowicon {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rowicon::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.colicon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Gallery */
+#Gallery{
+    background-color: rgb(0, 0, 0);
+    padding: 25px;
+    color: whitesmoke;
+}
+
+.slapur{
+    text-align: center;
+    margin: 25px;
+}
+
+.embed{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+/* Hire Me! */
+#hire{
+    background-color: rgb(12, 12, 12);
+    padding: 25px;
+    color: whitesmoke;   
+    text-align: center;
+}
+
+.formh{
+    margin: 20px;
+}
+
+.man{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+    align-items: center;
+    text-align: center;
+}
+
+/* Contacts */
+#Contacts{
+    color: whitesmoke;
+    background-color: black;
+    padding: 25px;
+}
+
+.headingcontacts{
+    font-family: 'Climate Crisis', cursive;
+    letter-spacing: 2px;
+    margin: 20px;
+    text-align: center;
+}
+
+.colcont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.colcont:hover{
+    color: gray;
+}
+
+/* responsive */
+
+/* tablet sized */
+@media screen and (max-width: 768px) {
+    .menu-toggle{
+        display: none;
+    }
+    nav ul {
+        width: 60%
+    }
+}
+
+/* mobile sized */
+/* navbar pada mobile berubah menjadi dropdown menu (menggunakan js) */
+@media screen and (max-width: 576px) {
+    .menu-toggle{
+        display:flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+    nav ul.slide{
+        transform: translateX(0)
+    }
+}
+
+
